@@ -6,8 +6,56 @@
 </head>
 <body>
 <script>
+    //primitive data types
     var a = 10;
-    console.log(a);
+    console.log(typeof a);
+
+    b="hello";
+    console.log(typeof b);
+
+    b=true;
+    console.log(typeof b);
+
+    b=null;
+    console.log(typeof b);
+
+    b=undefined;
+    console.log(typeof b);
+
+    b=Symbol('x');
+    console.log(typeof b);
+
+    b= BigInt(10000000000000000000000);
+    console.log( b);
+    //console.log(typeof b);
+
+    //==========================non primitive data types====================================
+
+    //Objects in JS
+    var x ={
+        name:"John",
+        age:20,
+        gender:"male"
+    }
+    console.log(x)
+    console.log(typeof x);
+
+    //Arrays in JS
+    var y = ["apple","mango","banana"];
+    console.log(y);
+    console.log(typeof y);
+
+    //Functions in JS
+    function getName(){
+        return "John";
+    }
+    console.log(typeof getName);
+
+    var getAge = function(){
+        return 20;
+    }
+    console.log(typeof getAge);
+
 </script>
 </body>
 </html>
