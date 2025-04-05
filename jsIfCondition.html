@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>if-else</title>
+</head>
+<body>
+<script>
+    let marks = 56;
+    if (marks >= 75){
+        console.log("Grade A")
+    }else if (marks >= 65){
+        console.log("Grade 65")
+    }else if (marks >=45){
+        console.log("Grade C")
+    }else if (marks >=35){
+        console.log("Grade S")
+    }else if (marks<= 35){
+        console.log("Fail")
+    }
+
+    let result = (marks >= 75) ? console.log("Grade A") :
+        (marks >= 65) ? console.log("Grade B"):
+            (marks >= 45)? console.log("Grade C"):
+                (marks >= 35)?console.log("Grade S"):
+                    console.log("Fail")
+
+    console.log(`Grade : ${marks}`)
+</script>
+</body>
+</html>
