@@ -6,6 +6,11 @@
 </head>
 <body>
 <script>
+    //Name Functions
+    function myFunction3(num1 , num2){
+        let sum = num1 + num2
+        return sum;
+    }
     function myFunction2(num1 , num2){
         let sum = num1 + num2
         console.log(sum)
@@ -16,6 +21,37 @@
     }
     myFunction()
     myFunction2(20,30)
+    let sum = myFunction3(10,20)
+    console.log(sum)
+
+
+
+    //function expressions
+    const myFunction5 = function (num1 , num2){
+        return  num1 + num2;
+    }
+    //variable eke name eka thamai function name eka wenne
+    const myFunction4 = function (){
+        console.log("Welcome to function expressions")
+    }
+    myFunction4()
+    let result = myFunction5(10,30)
+    console.log(result)
+
+
+    //Arrow functions
+
+    const myFunction7 = (num1 ,num2 ,num3) => {
+        return num1+num2+num3
+    }
+
+    const myFunction6 = () =>{
+        console.log("Welcome to the Arrow Functions")
+    }
+
+    myFunction6()
+    const total = myFunction7(1,2,3)
+    console.log(total)
 </script>
 </body>
 </html>
