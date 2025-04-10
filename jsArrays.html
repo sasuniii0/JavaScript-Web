@@ -14,6 +14,34 @@
 
     let arr3 = new Array(1,2,3,4,5,"ijse",function (){});
     console.log(arr3)
+
+    let arr4 = [5,3,5,6,7,["hello",0],function (){}];
+    console.log(arr4[5])
+
+    arr4[5][0] = "world"
+    console.log(arr4[5])
+
+    let arr5 = [1,2,3,4,5,6,7,8,9,10];
+    for (let i = 0; i <arr5.length ; i++) {
+        console.log([i])
+    }
+
+    let myArray = ['A', 'B', 'C', 'D', 'E'];
+    console.log(myArray.push("F"))
+
+    console.log(myArray.pop())
+
+    myArray.shift()
+    console.log(myArray)
+
+    myArray.unshift("A")
+    console.log(myArray)
+
+    let myArray2 = [100,200,300,400,500]
+    console.log(myArray.concat(myArray2))
+
+    let myArray3 = myArray.concat(myArray2)
+    console.log(myArray3)
 </script>
 </body>
 </html>
