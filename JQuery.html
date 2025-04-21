@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery</title>
+</head>
+<body>
+<h1>JQuery</h1>
+<p>JQuery is a JavaScript library that simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development.</p>
+<p class="description">It is free, open-source software and works across a multitude of browsers.</p>
+<p>JQuery is designed to change the way that you write JavaScript.</p>
+<p>It is a fast, small, and feature-rich JavaScript library.</p>
+<p>It makes things like HTML document traversal and manipulation, event handling, and animation much simpler with an easy-to-use API that works across a multitude of browsers.</p>
+
+<script src="lib/jquery-3.7.1.min.js"></script>
+
+<script>
+<!--    dom eka athule select krgnna -->
+    $('h1').css('background', 'red')
+    $('p').css('color', 'blue')
+    $('.description').css('color', 'green')
+
+    $('h1').css({
+        background: 'red',
+        color: 'white',
+        style: 'font-size: 50px'
+    })
+
+</script>
+</body>
+</html>

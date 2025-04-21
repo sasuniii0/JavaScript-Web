@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>traversing</title>
+</head>
+<body>
+
+<section>
+    <ul>
+        <li>FrontEnd</li>
+        <li>BackEnd</li>
+        <li>
+            <ol>
+                <li>Sl</li>
+                <li>UK</li>
+                <li>USA</li>
+            </ol>
+        </li>
+    </ul>
+</section>
+
+<script src="lib/jquery-3.7.1.min.js"></script>
+
+<script>
+
+    var parentElement = document.getElementsByTagName("li")[0].parentElement;
+    console.log(parentElement)
+    var childElement = document.getElementsByTagName("li")[0].children;
+    console.log(childElement)
+    var firstChildElement = document.getElementsByTagName("li")[0].firstElementChild;
+    console.log(firstChildElement)
+    var lastChildElement = document.getElementsByTagName("li")[0].lastElementChild;
+    console.log(lastChildElement)
+
+   $('ol').parents('section');
+   $('ol').children('li');
+   $('ol').children('li').first();
+   $('ol').children('li').last();
+
+   $('ul').children('li').eq(0);
+</script>
+
+</body>
+</html>
