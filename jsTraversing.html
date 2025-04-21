@@ -39,6 +39,15 @@
    $('ol').children('li').last();
 
    $('ul').children('li').eq(0);
+
+
+    $('ul').children('li').eq(1).prev();
+    $('ul').children('li').eq(1).next();
+    $('ul').children('li').eq(1).nextAll();
+    $('ul').children('li').eq(1).nextAll('li');
+    $('ul').children('li').eq(1).nextAll('li').eq(1);
+    $('ul').children('li').eq(1).nextAll('li').eq(1).next();
+    $('ul').children('li').eq(1).nextAll('li').eq(1).next().next();
 </script>
 
 </body>
